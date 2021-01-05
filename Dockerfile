@@ -1,0 +1,7 @@
+FROM openjdk:8-jdk-alpine
+ENV APP_HOME=/app/
+RUN mkdir $APP_HOME
+WORKDIR $APP_HOME
+COPY build/libs/* ./app.jar
+EXPOSE 8080
+CMD ["java","-jar","app.jar"]
