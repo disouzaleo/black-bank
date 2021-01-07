@@ -3,7 +3,6 @@ package com.br.blackbank.corebanking;
 import com.br.blackbank.corebanking.service.AccountServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.context.annotation.Bean;
 
 public class AccountServiceImplTest {
 
@@ -16,7 +15,5 @@ public class AccountServiceImplTest {
 
     @Test
     public void createDummyAccount(){
-        @Bean
-
     }
 }
